@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('scm-checkout') {
+            steps {
+                echo 'in scm-checkout stage'
+            }
+        }
+        stage('build') {
+            steps {
+                echo 'In build stage'
+            }
+        }
+        stage('test') {
+            steps {
+                echo 'In test stage'
+            }
+        }
+        stage('Archive') {
+            steps {
+                echo 'In archive stage'
+            }
+        }
+    }
+}
